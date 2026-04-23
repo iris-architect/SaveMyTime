@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="send_icon.png" type="image/png">
+  <meta property="og:title" content="Save My Time">
+  <meta property="og:description" content="Умное планирование задач, времени и отдыха без перегруза.">
+  <meta property="og:image" content="https://iris-architect.github.io/projects/SaveMyTime/landing/send_icon.png">
+  <meta property="og:url" content="https://iris-architect.github.io/projects/SaveMyTime/landing/">
+  <meta property="og:type" content="website">
+  <title>Save My Time</title>
+</head>
+
+<body class="bg-black text-white relative overflow-y-auto">
+
+  <svg width="0" height="0">
+    <!-- Фоновое изображение для компьютера -->
+    <clipPath id="clipDesktop" clipPathUnits="objectBoundingBox">
+      <path d="M0,0 L1,0 C0.85,0.08 0.85,0.22 0.70,0.32 C0.55,0.42 0.58,0.50 0.60,0.58 C0.65,0.66 0.55,0.74 0.45,0.80 C0.35,0.88 0.25,0.94 0.00,1.00 Z"/>
+    </clipPath>
+
+    <!-- Фоновое изображение для телефона -->
+    <clipPath id="clipMobile" clipPathUnits="objectBoundingBox">
+      <path d="M0,0 L1,0 L1,0.70 C0.83,0.70 0.83,1.00 0.67,1.00 C0.50,1.00 0.50,0.80 0.33,0.80 C0.17,0.80 0.17,1.00 0,1.00 Z"/>
+    </clipPath>
+  </svg>
+
+    <div class="clip-svg pointer-events-none absolute top-0 left-0 w-full h-[400px] md:h-[500px]"></div>
+
+    <div class="w-full min-h-screen grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-x-10 gap-y-8 relative z-10">
+
+      <!-- Фото + ссылки -->
+      <div class="flex flex-row md:flex-col items-start md:items-start gap-4 ml-4 order-1">
+        <img src="icon.png" class="w-24 sm:w-30 md:w-36 lg:w-40 rounded shadow" alt="icon">
+        <div class="download-card mt-2 p-3 md:mt-0 w-40 p-2 rounded-xl bg-black/40 backdrop-blur">
+          <div class="flex flex-col items-center gap-1">
+            <a href="https://www.rustore.ru/catalog/app/com.example.save_my_time" class="download-link">Google Play</a>
+            <a href="#" class="download-link">RuStore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Описание -->
+      <div class="mr-8 ml-4 order-2">
+        <h1 class="mt-20 md:my-4 text-4xl md:text-6xl"><b>Save My Time</b></h1>
+        <p class="description text-sm md:text-sm lg:!text-[1.1rem] lg:leading-snug">У вас не хватает времени на встречи с друзьями и отдых?</p>
+        <p class="description text-sm md:text-sm lg:!text-[1.1rem] lg:leading-snug">Кажется, что на хобби и даже бытовые дела постоянно не остаётся сил?</p>
+        <p class="description text-sm md:text-sm lg:!text-[1.1rem] lg:leading-snug">Вы чувствуете себя загнанным в бесконечный цикл «работа — дом», в котором всё остальное откладывается на потом?</p>
+        <p class="description text-sm md:text-sm lg:!text-[1.1rem] lg:leading-snug mt-4 mb-4"><b>Проблема не в вас — проблема в хаотичном планировании.</b></p>
+        <p class="description text-sm md:text-sm lg:!text-[1.1rem] lg:leading-snug">Это приложение помогает превратить цели и задачи в реалистичное расписание, которое учитывает работу, сон, события и так необходимое время для отдыха — а не игнорирует их.
+        Вы получаете понятную структуру, в которой легко двигаться шаг за шагом — без давления и прокрастинации.</p>
+      </div>
+
+      <!-- Контакты -->
+      <div class="flex flex-col h-full order-4 md:order-3 justify-self-end md:justify-self-start p-4 md:p-1">
+        <div class="mt-auto pl-4 mb-16">
+          <h2 class="text-xs md:text-base mb-3"><b>Поддержка и сотрудничество:</b></h2>
+          <div class="flex flex-col gap-1 text-xs md:text-sm">
+            <p>Telegram: <a href="https://t.me/arch_rly" class="contact-link">@arch_rly</a></p>
+            <p>Email: <a href="mailto:IrinaAlexandrova87@yandex.ru" class="contact-link">IrinaAlexandrova87@yandex.ru</a></p>
+            <p>GitHub: <a href="https://github.com/iris-architect" class="contact-link">Architect of Reality</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start order-3 md:order-4">
+        <!-- Скриншоты -->
+        <div class="relative overflow-hidden w-[250px] mx-auto sm:w-full order-2 md:order-1">
+          <div id="slider" class="flex transition-transform duration-700 ease-out">
+            <img src="schedule.png" class="slide" />
+            <img src="task_list.png" class="slide" />
+            <img src="create_task.png" class="slide" />
+            <img src="events.png" class="slide" />
+
+            <img src="schedule.png" class="slide" />
+            <img src="task_list.png" class="slide" />
+            <img src="create_task.png" class="slide" />
+          </div>
+        </div>
+
+        <div class="items-start md:justify-self-center p-4 order-1 md:order-2">
+          <h2 class="text-sm md:text-base mb-3"><b>Основные возможности Save My Time</b></h2>
+          <ul class="space-y-2 text-sm md:text-sm">
+            <li class="features-list">Автоматическое планирование задач и целей</li>
+            <li class="features-list">Учёт сна, работы и событий</li>
+            <li class="features-list">Поддержка разовых и регулярных задач</li>
+            <li class="features-list">Анализ хронотипа и уровня концентрации</li>
+            <li class="features-list">Приоритеты с учётом важности, сложности и мотивации</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <script src="main.js"></script>
+  </body>
+</html>
